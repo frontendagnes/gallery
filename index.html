@@ -9,15 +9,32 @@
     <title>Gallery | Agnieszka Kamińska</title>
 </head>
 <body>
-    <header>Nagłówek</header>
+    <header>
+        <div class="header__logo">Gallery</div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#pure">Gallery Js + CSS</a></li>
+                <li><a href="#lightbox">Gallery lightbox</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section>
+        <!-- Gallery JS + CSS -->
+        <section id="pure">
             <article class = "gallery"></article>
             <article class="gallery-zoom">
             </article>
         </section>
+        
+        <!-- Gallery lightbox -->
+        <section id="lightbox">
+
+        </section>
     </main>
-    <footer>Stopka</footer>
+    <footer>
+        <span>by Agnieszka Kamińska</span>
+        <span>&copy; 2021</span>
+    </footer>
         <script type="module" src="js/index.js"></script>
 </body>
 </html>

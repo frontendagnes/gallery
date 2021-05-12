@@ -7,7 +7,7 @@ export const images = [
     {id: 6, img: './images/2_ivanbertusi-raindropletscountryside.jpg'},
     {id: 7, img: './images/3_brianlaiphotography-waterfall4.jpg'},
     {id: 8, img: './images/book.png'},
-    {id: 9, img: './images/pingwin.png'},
+    {id: 9, img: './images/pingwin.png'}
 ]
 
 export const gallery = document.querySelector('.gallery')
