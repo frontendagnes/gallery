@@ -1,0 +1,8 @@
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+}
+.gallery__image{
+    width: 200px;
+    margin: 5px;
+}

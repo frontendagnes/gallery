@@ -7,3 +7,7 @@ export const images = [
     {id: 6, img: './images/2_ivanbertusi-raindropletscountryside.jpg'},
     {id: 7, img: './images/3_brianlaiphotography-waterfall4.jpg'}
 ]
+
+export const gallery = document.querySelector('.gallery')
+export const galleryZoom = document.querySelector('.gallery-zoom')
+
