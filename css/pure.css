@@ -6,3 +6,7 @@
     width: 200px;
     margin: 5px;
 }
+
+.gallery-zoom__image{
+    width: 60%;
+}
