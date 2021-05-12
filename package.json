@@ -1,0 +1,11 @@
+{
+  "name": "moje-gallery",
+  "version": "1.0.0",
+  "description": "Gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agnieszka Kamińska",
+  "license": "ISC"
+}
