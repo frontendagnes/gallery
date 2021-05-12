@@ -1,6 +1,25 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.header__logo{
+    font-size: 48px;
+    padding: 20px;;
+}
+.header__nav a{
+    text-decoration: none;
+    display: block;
+    color:#000000;
+    font-size: 24px;
+    transition: color 0.75s;    
+}
+.header__nav a:hover{
+    color: #800080;
 }
 .header__nav ul{
     padding: 0;
@@ -12,6 +31,10 @@ header{
 }
 .header__nav li{
     padding: 10px;
+    border: 2px solid black;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #eeeeee;
 }
 
 .gallery{
@@ -76,7 +99,8 @@ footer{
     justify-content: space-between;
     padding: 10px;
     font-size: 1.5em;
-    background-color: rosybrown;
+    border-top: 2px solid #000000;
+    border-radius: 10px;
     width: 100%;
     position: absolute;
     bottom: 0;
