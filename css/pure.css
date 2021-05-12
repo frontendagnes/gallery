@@ -6,7 +6,49 @@
     width: 200px;
     margin: 5px;
 }
+.gallery-zoom{
 
+}
+.gallery-zoom__div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.gallery-zoom__div:target{
+    display: flex;
+}
 .gallery-zoom__image{
     width: 60%;
+}
+
+.gallery-zoom--close{
+    position: relative;
+    right: -330px;
+    top: 35px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.75s;
+}
+.gallery-zoom--close:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000
+}
+.gallery-zoom--counter{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 28px;
 }
