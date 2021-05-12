@@ -1,6 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav ul{
+    padding: 0;
+    margin: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    display: flex;
+    list-style-type: none;
+}
+.header__nav li{
+    padding: 10px;
+}
+
 .gallery{
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 50px;
 }
 .gallery__image{
     width: 200px;
@@ -21,6 +38,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 .gallery-zoom__div:target{
     display: flex;
@@ -51,5 +69,15 @@
     color: white;
     position: absolute;
     bottom: 0;
-    font-size: 28px;
+    font-size: 2em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rosybrown;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
