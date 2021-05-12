@@ -12,4 +12,9 @@ body{
     min-height: 100%;
     position: relative;
 }
-
+h2{
+    text-align: center;
+    font-size: 42px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
