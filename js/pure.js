@@ -10,18 +10,24 @@ const zoomImage = () => {
             divZoom.classList.add("gallery-zoom__div")
             divZoom.id =`img-${image.id}`
 
+        const divImg = document.createElement("span")
+            divImg.classList.add("gallery-zoom__image-div")
+
         const close = document.createElement("a")
             close.classList.add("gallery-zoom--close")
             close.href = "#"
-            close.innerText = "Close"
+            close.innerHTML = `<i class="far fa-times-circle"></i>`
         
         const counter = document.createElement("div")
             counter.innerText = `Zdjęcie ${index + 1} z ${images.length}`
             counter.classList.add("gallery-zoom--counter")
 
-        divZoom.appendChild(close)
-        divZoom.appendChild(imgZoom)
-        divZoom.appendChild(counter)
+
+        
+        divImg.appendChild(close)
+        divImg.appendChild(imgZoom)
+        divImg.appendChild(counter)
+        divZoom.appendChild(divImg)
         galleryZoom.appendChild(divZoom)
 })
 }
@@ -39,7 +45,7 @@ const miniatureImage = () => {
 
         const divEl = document.createElement("div")
             divEl.classList.add("gallery__div")
-
+        
             href.appendChild(img)
             divEl.appendChild(href)
             gallery.appendChild(divEl)

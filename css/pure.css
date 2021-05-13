@@ -39,23 +39,44 @@ header{
 .gallery{
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 50px;
-    background-color: #5f5f5f;
-    padding-top: 40px;
     justify-content: center;
-    border-radius: 20px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.gallery__div{
+    width:250px;
+    background-color: #5f5f5f;
+    margin: 3px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 .gallery__image{
     width: 200px;
     margin: 5px;
-    border: 3px solid #ffffff;
-    transition: transform 0.75s;
+    border: 5px solid #ffffff;
+    transition: all 0.75s;
+    filter: grayscale(70%);
 }
 .gallery__image:hover{
-    transform: scale(1.2);
+    transform: scale(1.15);
+    border:transparent;
+    border-radius: 10px;
+    filter: grayscale(0);
 }
+
 .gallery-zoom{
 
+}
+.gallery-zoom__image-div{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    position: relative;
 }
 .gallery-zoom__div{
     transition: all 2s;
@@ -79,22 +100,23 @@ header{
 }
 
 .gallery-zoom--close{
-    position: relative;
-    right: -330px;
-    top: 35px;
+    position: absolute;
+    right: 40px;
+    top: 15px;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
     letter-spacing: 3px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 10px;
     transition: all 0.75s;
+ 
 }
 .gallery-zoom--close:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000000
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
 }
 .gallery-zoom--counter{
     color: white;
