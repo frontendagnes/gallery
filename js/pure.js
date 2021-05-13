@@ -10,20 +10,18 @@ const zoomImage = () => {
             divZoom.classList.add("gallery-zoom__div")
             divZoom.id =`img-${image.id}`
 
-        const divImg = document.createElement("span")
+        const divImg = document.createElement("div")
             divImg.classList.add("gallery-zoom__image-div")
 
         const close = document.createElement("a")
             close.classList.add("gallery-zoom--close")
-            close.href = "#"
+            close.href ="#0" 
             close.innerHTML = `<i class="far fa-times-circle"></i>`
         
         const counter = document.createElement("div")
             counter.innerText = `Zdjęcie ${index + 1} z ${images.length}`
             counter.classList.add("gallery-zoom--counter")
 
-
-        
         divImg.appendChild(close)
         divImg.appendChild(imgZoom)
         divImg.appendChild(counter)
@@ -31,6 +29,7 @@ const zoomImage = () => {
         galleryZoom.appendChild(divZoom)
 })
 }
+
 const miniatureImage = () => {
     images.forEach(image => {
         const href = document.createElement('a')
@@ -54,5 +53,6 @@ const miniatureImage = () => {
 const galleryPure = () => {
     miniatureImage()
     zoomImage()
+
 }
 export default galleryPure
