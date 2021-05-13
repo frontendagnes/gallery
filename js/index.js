@@ -1,3 +1,3 @@
-import galleryPure from './pure.js'
+import galleryPure from './pure/index.js'
 
 galleryPure()

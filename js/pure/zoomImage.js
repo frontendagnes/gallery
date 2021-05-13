@@ -1,4 +1,4 @@
-import { images, gallery, galleryZoom } from "./variables.js"
+import { images, galleryZoom } from '../variables.js'
 
 const zoomImage = () => {
     images.forEach((image, index) => {
@@ -29,30 +29,4 @@ const zoomImage = () => {
         galleryZoom.appendChild(divZoom)
 })
 }
-
-const miniatureImage = () => {
-    images.forEach(image => {
-        const href = document.createElement('a')
-        href.href = `#img-${image.id}`
-        href.classList.add("gallery__href")
-
-        const img = new Image()
-            img.src = image.img
-            img.alt = image.img
-            img.title = image.img
-            img.classList.add("gallery__image")
-
-        const divEl = document.createElement("div")
-            divEl.classList.add("gallery__div")
-        
-            href.appendChild(img)
-            divEl.appendChild(href)
-            gallery.appendChild(divEl)
-    })
-}
-const galleryPure = () => {
-    miniatureImage()
-    zoomImage()
-
-}
-export default galleryPure
+export default zoomImage
