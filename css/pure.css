@@ -73,7 +73,12 @@ header{
     position: absolute;
     background: transparent;
     border: transparent;
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 2s;
+}
+.next-image:hover,
+.prev-image:hover{
+    color: #ffffff
 }
 .next-image{
     right: 40px;
@@ -88,9 +93,7 @@ header{
     width: 100vw;
     height: 100vh;
     display: flex;
-    transform: scale(1, 0);
-    transform-origin: (top);
-    transition: all  0.75s;
+    transition: transform ease-in-out 0.75s;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -103,12 +106,12 @@ header{
     visibility: visible;
 } */
 .isVisible{
-    visibility: visible;
     transform: scale(1, 1);
-    transform-origin: bottom;
 }
+
 .noVisible{
-    visibility: hidden;
+    transform: scale(1, 0);
+    transform-origin: bottom;
 }
 .gallery-zoom__image-div{
     background-color: black;
@@ -159,4 +162,5 @@ footer{
     position: absolute;
     bottom: 0;
 }
+
 
