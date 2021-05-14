@@ -71,7 +71,6 @@ header{
     z-index: 1;
     cursor: pointer;
     position: absolute;
-    /* height: 100%; */
     background: transparent;
     border: transparent;
     color: white;
@@ -90,19 +89,19 @@ header{
     height: 100vh;
     display: flex;
     transform: scale(1, 0);
-    transform-origin: top;
-    transition: all ease-in-out 0.75s;
+    transform-origin: (top);
+    transition: all  0.75s;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
-.gallery-zoom__div:target{
+/* .gallery-zoom__div:target{
     transform: scale(1, 1);
     transform-origin: bottom;
     visibility: visible;
-}
+} */
 .isVisible{
     visibility: visible;
     transform: scale(1, 1);
