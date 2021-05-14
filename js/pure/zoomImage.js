@@ -8,7 +8,18 @@ const zoomImage = () => {
 
         const divZoom = document.createElement("div")
             divZoom.classList.add("gallery-zoom__div")
+            divZoom.classList.add("noVisible")
             divZoom.id =`img-${image.id}`
+
+        const nextImage = document.createElement("button")
+            nextImage.classList.add("next-image")
+            nextImage.innerHTML = `<i class="far fa-hand-point-right"></i>`
+            nextImage.title = "Next Iamge"
+
+        const prevImage = document.createElement("button")
+            prevImage.classList.add("prev-image")
+            prevImage.innerHTML = `<i class="far fa-hand-point-left"></i></i>`
+            prevImage.title = "Previous Image"
 
         const divImg = document.createElement("div")
             divImg.classList.add("gallery-zoom__image-div")
@@ -26,6 +37,8 @@ const zoomImage = () => {
         divImg.appendChild(imgZoom)
         divImg.appendChild(counter)
         divZoom.appendChild(divImg)
+        divZoom.appendChild(nextImage)
+        divZoom.appendChild(prevImage)
         galleryZoom.appendChild(divZoom)
 })
 }
