@@ -9,7 +9,6 @@ const prevImage = () => {
             let prevImg = activeSlide.previousElementSibling
 
         if(prevImg === null){
-            console.log("pusto prev")
             prevImg = slides[slides.length-1]      
         }         
 
@@ -17,8 +16,6 @@ const prevImage = () => {
             prevImg.classList.remove("noVisible")
             activeSlide.classList.add("noVisible")
             activeSlide.classList.remove("isVisible")
-            // prevImg.style.transformOrigin = "bottom"
-            // activeSlide.style.transformOrigin = "bottom"
        })
    })
 }

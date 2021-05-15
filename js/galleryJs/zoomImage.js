@@ -4,6 +4,8 @@ const zoomImage = () => {
     images.forEach((image, index) => {
         const imgZoom = new Image()
             imgZoom.src = image.img
+            imgZoom.alt = image.img
+            imgZoom.title = image.img
             imgZoom.classList.add("gallery-zoom__image")
 
         const divZoom = document.createElement("div")

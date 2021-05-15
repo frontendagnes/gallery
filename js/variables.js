@@ -43,3 +43,4 @@ export const images = [
 
 export const gallery = document.querySelector('.gallery')
 export const galleryZoom = document.querySelector('.gallery-zoom')
+

@@ -9,15 +9,12 @@ const nextImage = () => {
             let nextImg = slide.nextElementSibling
             
         if(nextImg === null){
-            console.log("pusto next")
             nextImg = slides[0]      
         }
             nextImg.classList.add("isVisible")
             nextImg.classList.remove("noVisible")
             slide.classList.add("noVisible")
             slide.classList.remove("isVisible")
-            // nextImg.style.transformOrigin = "top"
-            // slide.style.transformOrigin = "top"
        })
    })
 

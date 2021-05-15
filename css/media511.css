@@ -1,0 +1,8 @@
+@media (max-width: 511px){
+    .gallery__div{
+        width: 100% !important;
+    }
+    .gallery__image{
+        width: 99% !important;
+    }
+}

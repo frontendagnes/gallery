@@ -6,11 +6,12 @@ const miniatureImage = () => {
         href.href = `#img-${image.id}`
         href.classList.add("gallery__href")
 
-        const img = new Image()
+        const img =  new Image()
             img.src = image.img
             img.alt = image.img
             img.title = image.img
             img.classList.add("gallery__image")
+            img.loading = "lazy"
 
         const divEl = document.createElement("div")
             divEl.classList.add("gallery__div")
