@@ -14,6 +14,7 @@ body{
     position: relative;
     font-family: 'Girassol', cursive;
     letter-spacing: 5px;
+    background-color: rgb(127, 229, 255);
 }
 header{
     border-bottom: 4px solid #000000;
@@ -71,18 +72,22 @@ header{
     position: absolute;
     background: transparent;
     border: transparent;
-    color: rgba(0, 0, 0, 0.5);
-    transition: color 2s;
+    color: rgba(95, 94, 94, 0.5);
+    transition: all 2s;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 .next-image:hover,
 .prev-image:hover{
-    color: #ffffff
+    color: #ffffff;
+    background-color: #000000;
 }
 .next-image{
-    right: 40px;
+    right: 10px;
 }
 .prev-image{
-    left: 40px;
+    left: 0;
 }
 .gallery-zoom__div{ 
     position: fixed;
@@ -100,11 +105,15 @@ header{
 }
 .isVisible{
     transform: scale(1, 1);
-    transform-origin: top;
 }
 
 .noVisible{
     transform: scale(1, 0);
+}
+.orginTop{
+    transform-origin: top
+}
+.orginBottom{
     transform-origin: bottom;
 }
 .gallery-zoom__image-div{
@@ -120,7 +129,18 @@ header{
 .gallery-zoom__image{
     width: 100%;
 }
+.gallery-zoom__miniature-wrapper{
+    overflow:scroll;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom:0;
+}
 
+.gallery-zoom__miniature{
+    width: 200px;
+}
 .gallery-zoom--close{
     position: absolute;
     right: 10px;

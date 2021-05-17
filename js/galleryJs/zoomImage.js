@@ -1,6 +1,7 @@
 import { images, galleryZoom } from '../variables.js'
 
 const zoomImage = () => {
+   
     images.forEach((image, index) => {
         const imgZoom = new Image()
             imgZoom.src = image.img
@@ -34,6 +35,10 @@ const zoomImage = () => {
         const counter = document.createElement("div")
             counter.innerText = `Zdjęcie ${index + 1} z ${images.length}`
             counter.classList.add("gallery-zoom--counter")
+        
+        const miniatureWrapper = document.createElement("div")
+            miniatureWrapper.classList.add("gallery-zoom__miniature-wrapper")
+       
 
         divImg.appendChild(close)
         divImg.appendChild(imgZoom)
@@ -41,6 +46,7 @@ const zoomImage = () => {
         divZoom.appendChild(divImg)
         divZoom.appendChild(nextImage)
         divZoom.appendChild(prevImage)
+        divZoom.appendChild(miniatureWrapper)
         galleryZoom.appendChild(divZoom)
 })
 }

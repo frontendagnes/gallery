@@ -14,8 +14,12 @@ const prevImage = () => {
 
             prevImg.classList.add("isVisible")
             prevImg.classList.remove("noVisible")
+            prevImg.classList.add("orginBottom")
+            prevImg.classList.remove("orginTop")
             activeSlide.classList.add("noVisible")
             activeSlide.classList.remove("isVisible")
+            activeSlide.classList.add("orginTop")
+            activeSlide.classList.remove("orginBottom")
        })
    })
 }
