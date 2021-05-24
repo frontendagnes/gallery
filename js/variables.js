@@ -44,4 +44,6 @@ export const images = [
 export const gallery = document.querySelector('.gallery')
 export const galleryZoom = document.querySelector('.gallery-zoom')
 
-export const section = document.querySelector(".section-gallery")
+export const miniatureWrapper = document.querySelector(".gallery-zoom__miniature-wrapper")
+export const previouslyClickedElement = ['1'] // tablica trzymająca dwa ostanio kliknięte elementy w miniaturkach - potrzeban żeby wyciągnąc do zmiennej przedostanio kliknięty element
+export const previouslyClickedMiniatures = ['1']

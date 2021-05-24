@@ -1,5 +1,5 @@
 @import url('./media511.css');
-
+@import url('./media600.css');
 *{
     padding: 0;
     margin: 0;
@@ -44,7 +44,9 @@ header{
     background-color: rgb(127, 229, 255);
     padding-top: 30px;
     padding-bottom: 60px;
+    transition: all 0.75s;
 }
+
 .gallery__div{
     width:250px;
     background-color: rgba(4, 112, 139, 0.6);
@@ -53,6 +55,11 @@ header{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    position: relative;
+}
+.gallery__image:target{
+    transition: all 0.75s;
+    background-color: #800080;
 }
 .gallery__image{
     width: 200px;
@@ -60,9 +67,25 @@ header{
     border: 5px solid #ffffff;
     transition: all 0.75s;
 }
+
+.gallery--checked{
+    transition: all 0.75s;
+    background-color: #800080;
+    outline: none;
+}
+
 .gallery__image:hover{
     transform: scale(1.2);
     border-radius: 10px;
+}
+.control-image{
+    display: block;
+    height: 100%;
+    width: auto;
+    margin:0;
+    padding: 0;
+    transition: all 0.75s;
+    position: absolute;
 }
 .next-image,
 .prev-image{
@@ -83,10 +106,12 @@ header{
     color: #ffffff;
     background-color: #000000;
 }
-.next-image{
-    right: 10px;
+.next-image,
+.control-next{
+    right: 0;
 }
-.prev-image{
+.prev-image,
+.control-prev{
     left: 0;
 }
 .gallery-zoom__div{ 
@@ -94,7 +119,7 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 79vh;
     display: flex;
     transition: transform ease-in-out 0.75s;
     flex-flow: column wrap;
@@ -125,21 +150,27 @@ header{
     width: 70%;
     border: 5px solid #ffffff;
     border-radius: 10px;
+    /* margin: 0 auto; */
 }
 .gallery-zoom__image{
     width: 100%;
 }
 .gallery-zoom__miniature-wrapper{
-    overflow:scroll;
-    width: 80%;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom:0;
+    position: fixed;
+    bottom:10px;
+    z-index: 2;
+    transition: all 0.75s;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .gallery-zoom__miniature{
     width: 200px;
+    margin-left: 5px;
 }
 .gallery-zoom--close{
     position: absolute;
@@ -160,9 +191,9 @@ header{
     border-radius: 50%;
 }
 .gallery-zoom--counter{
-    color: white;
+    color: #ffffff;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     font-size: 2em;
 }
 footer{
