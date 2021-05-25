@@ -39,6 +39,17 @@ export const images = [
     {id: 38, img: './images/03-spitzer-w5nebula.jpg'},
     {id: 39, img: './images/04-spitzer-helixnebula.jpg'},
     {id: 40, img: './images/1_janapanfilova.jpg'},
+    // {id: 41, img: './images/02-spitzer-smc.jpg'},
+    // {id: 42, img: './images/03-spitzer-w5nebula.jpg'},
+    // {id: 43, img: './images/04-spitzer-helixnebula.jpg'},
+    // {id: 44, img: './images/1_janapanfilova.jpg'},
+    // {id: 45, img: './images/2_ivanbertusi-raindropletscountryside.jpg'},
+    // {id: 46, img: './images/3_brianlaiphotography-waterfall4.jpg'},
+    // {id: 47, img: './images/01-spitzer-omeganebula.jpg'},
+    // {id: 48, img: './images/02-spitzer-smc.jpg'},
+    // {id: 49, img: './images/03-spitzer-w5nebula.jpg'},
+    // {id: 50, img: './images/04-spitzer-helixnebula.jpg'},
+    // {id: 51, img: './images/1_janapanfilova.jpg'},
 ]
 
 export const gallery = document.querySelector('.gallery')

@@ -7,9 +7,11 @@ const getPreviusItem = () => {
         href.addEventListener("click", (e) => { 
             const galleryDivZoom = document.querySelectorAll('.gallery-zoom__div')
             const galleryDiv = document.querySelectorAll(".gallery__div")
-
+            
+            if(galleryDiv[index].classList.contains("gallery--checked")) return
+            
             galleryDiv[index].classList.add("gallery--checked")
-            // galleryDiv[index].focus()
+
             previouslyClickedElement.push(galleryDivZoom[index])
             previouslyClickedMiniatures.push(galleryDiv[index])
             

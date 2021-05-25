@@ -4,6 +4,16 @@ const zoomImage = () => {
     
     images.forEach((image, index) => {
 
+        let last = image.id + 1
+        let first = image.id - 1
+
+        if(last > images.length){
+            last = images[0].id
+        }
+
+        if(first < images[0].id){
+            first = images[images.length-1].id
+        }
         const imgZoom = new Image()
             imgZoom.src = image.img
             imgZoom.alt = image.img
@@ -16,7 +26,7 @@ const zoomImage = () => {
             divZoom.id =`img-${image.id}`
 
         const nextHref = document.createElement("a")
-            nextHref.href = `#div-${image.id + 1}`
+            nextHref.href = `#div-${last}`
             nextHref.classList.add("control-image")
             nextHref.classList.add("control-next")
 
@@ -28,7 +38,7 @@ const zoomImage = () => {
         nextHref.appendChild(nextImage)
 
         const prevHref = document.createElement("a")
-            prevHref.href = `#div-${image.id - 1}`
+            prevHref.href = `#div-${first}`
             prevHref.classList.add("control-image")
             prevHref.classList.add("control-prev")
 

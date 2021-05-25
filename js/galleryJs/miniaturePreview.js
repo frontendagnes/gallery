@@ -7,6 +7,7 @@ const galleryDiv = document.querySelectorAll(".gallery-zoom__div")
 
 galleryHref.forEach((item, i) => {
     item.addEventListener("click", () => {
+
         if(galleryDiv[i].classList.contains("isVisible")){
             gallery.classList.remove("gallery")
             gallery.classList.add("gallery-zoom__miniature-wrapper")
@@ -15,6 +16,8 @@ galleryHref.forEach((item, i) => {
             gallery.classList.add("gallery")
         }
     })
+    
+
 })
 }
 
