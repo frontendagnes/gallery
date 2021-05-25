@@ -18,14 +18,9 @@ const miniatureImage = () => {
             divEl.classList.add("gallery__div")
             divEl.id = `div-${image.id}`
             divEl.dataset.active = `div-${image.id}`
-        
-        // const checkMarkDiv = document.createElement("div")
-        //     checkMarkDiv.classList.add("check-mark-div")
-        //     checkMarkDiv.id = `mark-${image.id}`
 
             href.appendChild(img)
             divEl.appendChild(href)
-            // divEl.appendChild(checkMarkDiv)
             gallery.appendChild(divEl)
     })
 }

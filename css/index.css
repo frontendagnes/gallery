@@ -150,7 +150,6 @@ header{
     width: 70%;
     border: 5px solid #ffffff;
     border-radius: 10px;
-    /* margin: 0 auto; */
 }
 .gallery-zoom__image{
     width: 100%;
@@ -166,7 +165,6 @@ header{
     z-index: 2;
     transition: all 0.75s;
     background-color: rgba(0, 0, 0, 0.8);
-
 }
 
 .gallery-zoom__miniature{
