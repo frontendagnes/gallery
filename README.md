@@ -18,8 +18,8 @@ Obrazy pobrane ze strony: https://pixabay.com/pl/
 
 ## Contribute
 
-* Source Code: https://github.com/zabula81/gallery
-* Issue Tracker: https://github.com/zabula81/gallery/issues
+* Source Code: https://github.com/frontendagnes/gallery
+* Issue Tracker: https://github.com/frontendagnes/gallery/issues
 * View: https://frontendagnes.github.io/gallery/
 
 ## Author
