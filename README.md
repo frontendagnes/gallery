@@ -20,7 +20,7 @@ Obrazy pobrane ze strony: https://pixabay.com/pl/
 
 * Source Code: https://github.com/zabula81/gallery
 * Issue Tracker: https://github.com/zabula81/gallery/issues
-* View: https://zabula81.github.io/gallery/
+* View: https://frontendagnes.github.io/gallery/
 
 ## Author
 Agnieszka Kamińska (agnieszka.kaminska@ksiegarnia.edu.pl)
